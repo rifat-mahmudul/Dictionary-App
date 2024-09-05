@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+
+
+    <!-- -----tailwind cnd link----- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+</head>
+<body>
+    
+    <div class="max-w-[90%] sm:max-w-[500px] mx-auto text-center flex flex-col justify-center items-center h-[100vh]">
+        
+        <div class="w-full bg-gradient-to-r from-gray-700 to-gray-400 rounded-2xl p-4">
+
+            <h1 class="text-3xl font-bold">Your Dictionary</h1>
+
+            <input type="text" name="word" id="wordInput" placeholder="Enter your word" class="w-full mt-4 px-5 py-3 text-xl rounded-lg bg-transparent border-2 border-teal-600 font-bold">
+
+            <button class="bg-gradient-to-r from-cyan-600 to-gray-500 text-xl mt-5 p-3 rounded-3xl font-bold hover:bg-gradient-to- hover:from-gray-500 hover:to-cyan-600" onclick="findWord()">Find Word</button>
+
+            <div class="w-full" id="result" class="mt-5">
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
